@@ -1,0 +1,26 @@
+{
+  "name": "lesson-nextjs-static-regeneration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next -p 3002",
+    "build": "next build",
+    "start": "next start -p 3002"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GetStartedHQ/lesson-nextjs-static-regeneration.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GetStartedHQ/lesson-nextjs-static-regeneration/issues"
+  },
+  "homepage": "https://github.com/GetStartedHQ/lesson-nextjs-static-regeneration#readme",
+  "dependencies": {
+    "next": "latest",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
