@@ -1,7 +1,16 @@
 import { findSong } from '../lib/find-song'
 import { Container } from '../components/Container';
+import { useEffect } from 'react';
 
 export default function Home({ song }) {
+    useEffect(() => {
+        const handler = setTimeout(() => {
+            fetch('/')
+        }, 3500)
+
+        return () => clearTimeout(handler)
+    }, [])
+
     return (
         <Container>
             <div className="music">
