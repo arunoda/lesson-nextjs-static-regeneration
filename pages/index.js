@@ -34,6 +34,7 @@ export default function Home({ song }) {
 
 export async function getStaticProps() {
     const song = await findSong();
+
     return {
         props: {
             song
