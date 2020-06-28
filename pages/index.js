@@ -14,15 +14,23 @@ export default function Home({ song }) {
                 <audio controls loop>
                     <source src={song.preview} type="audio/mpeg" />
                 </audio>
-            </div>
-            <div className="reload">
-                <a href="/">Try Another One</a>
+                <div className="reload">
+                    <a href="/">Try Another One</a>
+                </div>
             </div>
             <style jsx>{`
                 .container {
                     text-align: center;
                     font-family: arial;
-                    margin: 50px 10px;
+                    margin: auto 10px;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                 }
 
                 .music .name {
@@ -32,8 +40,8 @@ export default function Home({ song }) {
                 }
 
                 .music .image img {
-                    width: 300px;
-                    height: 300px;
+                    width: 250px;
+                    height: 250px;
                 }
 
                 .music .image {
