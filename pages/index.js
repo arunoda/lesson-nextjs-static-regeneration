@@ -23,11 +23,12 @@ export default function Home({ song }) {
     )
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
     const song = await findSong();
     return {
         props: {
             song
-        }
+        },
+        unstable_revalidate: 3
     }
 }
