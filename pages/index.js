@@ -1,7 +1,16 @@
 import { findSong } from '../lib/find-song'
 import { Container } from '../components/Container';
+import { useEffect } from 'react';
 
 export default function Home({ song }) {
+    useEffect(() => {
+        const handler = setTimeout(() => {
+            fetch('/')
+        }, 3000);
+
+        return () => clearTimeout(handler)
+    }, [])
+
     return (
         <Container>
             <div className="music">
@@ -23,11 +32,12 @@ export default function Home({ song }) {
     )
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
     const song = await findSong();
     return {
         props: {
             song
-        }
+        },
+        unstable_revalidate: 3
     }
 }
