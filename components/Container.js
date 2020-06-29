@@ -36,11 +36,16 @@ export function Container ({children}) {
                     margin: 10px 0;
                 }
 
+                .container :global(.lesson-info a),
                 .container :global(.reload a) {
                     color: #03A9F4;
                     text-decoration: none;
                     padding-bottom: 2px;
                     border-bottom: 1px solid #03A9F4;
+                }
+
+                .container :global(.lesson-info) {
+                    margin: 20px 0;
                 }
             `}</style>
         </div>

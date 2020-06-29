@@ -27,6 +27,9 @@ export default function Home({ song }) {
                 <div className="reload">
                     <a href="/">Try Another One</a>
                 </div>
+                <div className="lesson-info">
+                    <a href="https://getstarted.sh/with/nextjs-incremental-static-regeneration">How to create this app?</a>
+                </div>
             </div>
         </Container>
     )
