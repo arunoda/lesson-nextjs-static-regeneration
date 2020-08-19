@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/GetStartedHQ/lesson-nextjs-static-regeneration#readme",
   "dependencies": {
-    "next": "latest",
+    "next": "9.5.x",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   }
